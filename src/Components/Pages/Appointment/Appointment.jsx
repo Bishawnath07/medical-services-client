@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 const Appointment = () => {
     const doctors = useLoaderData()
     const {user} = useContext(AuthContext);
-    const { _id ,name ,image ,expertise} = doctors;
+    const { name ,image ,expertise} = doctors;
 
     const handleAppoinment = event =>{
         event.preventDefault();
