@@ -3,7 +3,7 @@
     {
         
          
-          "name": "Dr. Michael Chen",
+          "name": "Dr. Micel Chen",
           "description": "Skilled orthopedic surgeon with expertise in sports injuries.",
           "image": "https://i.ibb.co/gdktrCp/c1.jpg",
           "expertise": "Orthopedic Surgery"
@@ -13,7 +13,7 @@
       {
         
         
-          "name": "Dr. Sarah Patel",
+          "name": "Dr. akshar Patel",
           "description": "Compassionate pediatrician specializing in child healthcare.",
           "image": "https://i.ibb.co/QnqMFFR/c2.jpg",
           "expertise": "Pediatrics"
@@ -22,7 +22,7 @@
 
       {
         
-          "name": "Dr. Robert Lee",
+          "name": "Dr. Andry Lee",
           "description": "Dedicated oncologist providing comprehensive cancer care.",
           "image": "https://i.ibb.co/ngprHbG/c3.jpg",
           "expertise": "Oncology"
@@ -31,11 +31,91 @@
 
       {
        
-          "name": "Dr. Jennifer Ramirez",
+          "name": "Dr. Jennifer ",
           "description": "Highly skilled neurosurgeon specializing in brain and spinal surgeries.",
           "image": "https://i.ibb.co/5skzY72/c4.jpg",
           "expertise": "Neurosurgery"
-        }
+        },
+
+        {
+         
+            "name": "Dr. Jennifer ",
+            "description": "Highly skilled neurosurgeon specializing in brain and spinal surgeries.",
+            "image": "https://i.ibb.co/5skzY72/c4.jpg",
+            "expertise": "Neurosurgery"
+          },
+
+          {
+           
+              "name": "Dr. Jennifer ",
+              "description": "Highly skilled neurosurgeon specializing in brain and spinal surgeries.",
+              "image": "https://i.ibb.co/5skzY72/c4.jpg",
+              "expertise": "Neurosurgery"
+            },
+
+            {
+             
+                "name": "Dr. Jennifer ",
+                "description": "Highly skilled neurosurgeon specializing in brain and spinal surgeries.",
+                "image": "https://i.ibb.co/5skzY72/c4.jpg",
+                "expertise": "Neurosurgery"
+              },
+
+              {
+               
+                  "name": "Dr. Jennifer ",
+                  "description": "Highly skilled neurosurgeon specializing in brain and spinal surgeries.",
+                  "image": "https://i.ibb.co/5skzY72/c4.jpg",
+                  "expertise": "Neurosurgery"
+                },
+
+                {
+                 
+                    "name": "Dr. Jennifer ",
+                    "description": "Highly skilled neurosurgeon specializing in brain and spinal surgeries.",
+                    "image": "https://i.ibb.co/5skzY72/c4.jpg",
+                    "expertise": "Neurosurgery"
+                  },
+
+                  {
+                   
+                      "name": "Dr. Jennifer ",
+                      "description": "Highly skilled neurosurgeon specializing in brain and spinal surgeries.",
+                      "image": "https://i.ibb.co/5skzY72/c4.jpg",
+                      "expertise": "Neurosurgery"
+                    },
+
+                    {
+                     
+                        "name": "Dr. Jennifer ",
+                        "description": "Highly skilled neurosurgeon specializing in brain and spinal surgeries.",
+                        "image": "https://i.ibb.co/5skzY72/c4.jpg",
+                        "expertise": "Neurosurgery"
+                      },
+
+                      {
+                       
+                          "name": "Dr. Jennifer ",
+                          "description": "Highly skilled neurosurgeon specializing in brain and spinal surgeries.",
+                          "image": "https://i.ibb.co/5skzY72/c4.jpg",
+                          "expertise": "Neurosurgery"
+                        },
+
+                        {
+                         
+                            "name": "Dr. Jennifer ",
+                            "description": "Highly skilled neurosurgeon specializing in brain and spinal surgeries.",
+                            "image": "https://i.ibb.co/5skzY72/c4.jpg",
+                            "expertise": "Neurosurgery"
+                          },
+
+                          {
+                           
+                              "name": "Dr. Jennifer ",
+                              "description": "Highly skilled neurosurgeon specializing in brain and spinal surgeries.",
+                              "image": "https://i.ibb.co/5skzY72/c4.jpg",
+                              "expertise": "Neurosurgery"
+                            }
       
       
 ]

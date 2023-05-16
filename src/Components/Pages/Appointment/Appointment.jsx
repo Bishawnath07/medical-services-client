@@ -8,6 +8,7 @@ const Appointment = () => {
     const doctors = useLoaderData()
     const {user} = useContext(AuthContext);
     const { name ,image ,expertise} = doctors;
+    console.log(doctors)
 
     const handleAppoinment = event =>{
         event.preventDefault();
