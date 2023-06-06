@@ -1,18 +1,21 @@
-import { useLoaderData } from "react-router-dom";
+// import { useLoaderData } from "react-router-dom";
 import DoctorCard from "./DoctorCard";
 import { useEffect, useState } from "react";
 
 
 const Doctors = () => {
+    const [doctorsLoader , setDoctorsLoader] = useState([])
     const [doctors , setDoctors] = useState([]);
 
-    const doctorsLoader = useLoaderData();
+
+    useEffect(()=>{
+        fetch('http://localhost:5000/totalDoctors').then(res =>res.json()).then(data =>setDoctorsLoader(data))
+    } , [])
     
     const itemsPerPage = 10;
-    const totalPages = Math.ceil(doctorsLoader / itemsPerPage);
+    const totalPages =Math.ceil(doctorsLoader / itemsPerPage);
     console.log(totalPages)
 
-    // const pageNumbers = [...Array(totalPages).keys()]
     
 
     useEffect( ()=>{

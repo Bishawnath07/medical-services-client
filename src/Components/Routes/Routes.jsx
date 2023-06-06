@@ -3,9 +3,9 @@ import Main from "../Layout/Main";
 import Home from '../Pages/Home/Home/Home'
 import Appointment from "../Pages/Appointment/Appointment";
 import Login from "../Pages/Login/Login";
-import Register from "../Pages/Register/Register";
 import MyAppoinment from "../Pages/MyAppoinment/MyAppoinment";
 import PrivateRoute from "./PrivateRoute";
+import SignUp from "../Pages/SignUp/SignUp";
 
 const router = createBrowserRouter([
     {
@@ -15,15 +15,15 @@ const router = createBrowserRouter([
         {
             path: '/' ,
             element: <Home></Home> ,
-            loader: () => fetch('http://localhost:5000/doctors')
-        } ,
+           
+          } ,
         {
-            path:'/login',
-            element: <Login></Login>
+          path:'/login',
+          element: <Login></Login> ,
         },
         {
-            path: '/register',
-            element: <Register></Register>
+            path: '/signup',
+            element: <SignUp></SignUp>
         },
         {
           path:'/appointment/:id' ,

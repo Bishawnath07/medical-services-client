@@ -2,7 +2,9 @@ import Banner from '../Banner/Banner';
 import Doctors from '../Doctors/Doctors';
 
 const Home = () => {
+   
     return (
+        
         <div>
             <Banner></Banner>
             <Doctors></Doctors>

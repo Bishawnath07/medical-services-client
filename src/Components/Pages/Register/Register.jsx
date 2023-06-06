@@ -1,13 +1,16 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider/AuthProvider";
 import img from '../../../assets/login/login.svg'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import SocialLogin from "../../SocialLogin/SocialLogin";
+import Swal from "sweetalert2";
 
 
 const Register = () => {
 
-    const { createUser } = useContext(AuthContext);
+    const { createUser , updateProfileAndPhoto } = useContext(AuthContext);
     // console.log(createUser)
+    const navigate = useNavigate()
 
     const handleSignUp = event => {
         event.preventDefault();
@@ -22,9 +25,43 @@ const Register = () => {
             .then(result => {
                 const user = result.user;
                 console.log('created user', user)
+                
+                const saveUser = {name:  user.displayName ,email: user.email}
+                updateUser(result.user , name , email)
+                .then(() => {
+                   fetch('http://localhost:5000/users' , {
+                    method: 'POST' ,
+                    headers: {
+                        'content-type' : 'application/json'
+                    },
+                    body: JSON.stringify(saveUser)
+                   })
+                   .then(res => res.json())
+                   .then(data =>{
+                        if(data.insertedId){
+                           
+                            Swal.fire({
+                                position: 'top-center',
+                                icon: 'success',
+                                title: 'User created successfully.',
+                                showConfirmButton: false,
+                                timer: 1500
+                            });
+                            navigate('/');
+                        }
+                   })
+                })
             })
             .catch(error => console.log(error))
 
+    }
+
+    const updateUser = (user , name , photo )=>{
+        updateProfileAndPhoto(user , name , photo)
+        .then(result =>{
+            console.log('update user' , result);
+        })
+        .catch(error => console.log(error))
     }
 
     return (
@@ -63,6 +100,7 @@ const Register = () => {
                         </div>
                     </form>
                     <p className='my-4 text-center'>Already Have an Account? <Link className='text-orange-600 font-bold' to="/login">Login</Link> </p>
+                    <SocialLogin></SocialLogin>
                 </div>
             </div>
         </div>

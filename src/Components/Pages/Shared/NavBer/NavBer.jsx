@@ -10,7 +10,7 @@ const NavBer = () => {
 
     const handleLogOut = () =>{
         logOut()
-        .then(res => res.json)
+        .then(res => res.json())
         .then(data => {
             console.log(data)
         })
